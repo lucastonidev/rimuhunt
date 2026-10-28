@@ -40,3 +40,4 @@ test('Session detecta status autenticado com cookie SAPISID', () => {
   assert.equal(authSession.isAuthenticated(), true);
   assert.ok(authSession.getAuthorizationHeader().startsWith('SAPISIDHASH '));
 });
+

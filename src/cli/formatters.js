@@ -141,3 +141,4 @@ export function formatReport(result) {
 
   return lines.join('\n');
 }
+

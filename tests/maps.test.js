@@ -36,3 +36,4 @@ test('parseMapsHtml detecta perfil restrito', () => {
 
   assert.equal(parsed.isRestricted, true);
 });
+

@@ -100,3 +100,4 @@ export async function checkYouTube(target, options = {}) {
     durationMs: Date.now() - start
   };
 }
+

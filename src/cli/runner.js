@@ -12,8 +12,8 @@ import { startServer } from '../server/server.js';
 
 const HELP_TEXT = `
 USO:
-  npx googletype <alvo> [opções]
-  node bin/googletype.js <alvo> [opções]
+  npx rimuhunt <alvo> [opções]
+  node bin/rimuhunt.js <alvo> [opções]
 
 ALVOS SUPORTADOS:
   alvo@gmail.com             Endereço de e-mail do Google (Gmail ou Workspace)
@@ -27,13 +27,13 @@ OPÇÕES:
   --timeout <ms>             Tempo limite por requisição em milissegundos (padrão: 10000)
   --server [porta]           Inicia a micro-API REST com streaming SSE (padrão: porta 3000)
   -h, --help                 Exibe esta ajuda interativa
-  -v, --version              Exibe a versão atual do googletype-osint
+  -v, --version              Exibe a versão atual do rimuhunt
 
 EXEMPLOS:
-  npx googletype investigado@gmail.com
-  npx googletype 104857602938475610293 --geojson -o mapa_alvo.geojson
-  npx googletype alvo@gmail.com --json > resultado.json
-  npx googletype --server 8080
+  npx rimuhunt investigado@gmail.com
+  npx rimuhunt 104857602938475610293 --geojson -o mapa_alvo.geojson
+  npx rimuhunt alvo@gmail.com --json > resultado.json
+  npx rimuhunt --server 8080
 `;
 
 /**
@@ -74,7 +74,7 @@ export async function runCli(argv = process.argv.slice(2)) {
   }
 
   if (values.version) {
-    console.log('googletype-osint v1.0.0');
+    console.log('rimuhunt v1.0.0');
     return;
   }
 
@@ -89,7 +89,7 @@ export async function runCli(argv = process.argv.slice(2)) {
   if (!target) {
     console.log(renderBanner());
     console.error(styleText('red', '❌ Erro: Nenhum alvo informado.'));
-    console.log(styleText('yellow', 'Exemplo: npx googletype investigado@gmail.com\n'));
+    console.log(styleText('yellow', 'Exemplo: npx rimuhunt investigado@gmail.com\n'));
     console.log(HELP_TEXT);
     process.exit(1);
   }
@@ -159,3 +159,4 @@ export async function runCli(argv = process.argv.slice(2)) {
     process.exit(1);
   }
 }
+

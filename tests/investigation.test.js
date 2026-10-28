@@ -29,3 +29,4 @@ test('investigateGoogle dispara callbacks de progresso onProgress', async () => 
   assert.equal(result.target.isEmail, true);
   assert.equal(result.target.email, 'test.account@gmail.com');
 });
+

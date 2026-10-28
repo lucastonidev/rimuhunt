@@ -18,3 +18,4 @@ test('HttpClient monta headers incluindo User-Agent e cookies', () => {
   assert.equal(headers['X-Custom'], 'test-val');
   assert.ok(headers['User-Agent'].includes('Mozilla'));
 });
+

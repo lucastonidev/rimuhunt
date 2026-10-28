@@ -45,3 +45,4 @@ test('buildGeoJSON converte avaliações em FeatureCollection com bbox e metadat
   assert.equal(geojson.metadata.target, 'teste@gmail.com');
   assert.equal(geojson.metadata.totalPoints, 2);
 });
+

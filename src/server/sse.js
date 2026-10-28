@@ -26,3 +26,4 @@ export function sendSSE(res, event, data) {
   const payload = typeof data === 'string' ? data : JSON.stringify(data);
   res.write(`event: ${event}\ndata: ${payload}\n\n`);
 }
+

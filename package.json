@@ -1,10 +1,10 @@
 {
-  "name": "googletype-osint",
+  "name": "rimuhunt",
   "version": "1.0.0",
   "description": "Investigação OSINT profunda de pegada digital de contas Google / Gmail em JavaScript nativo (Node.js ESM) com zero dependências externas.",
   "type": "module",
   "bin": {
-    "googletype": "./bin/googletype.js"
+    "rimuhunt": "./bin/rimuhunt.js"
   },
   "main": "./src/index.js",
   "exports": {
@@ -14,11 +14,12 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "start": "node bin/googletype.js",
+    "start": "node bin/rimuhunt.js",
     "test": "node --test tests/*.test.js"
   },
   "keywords": [
     "osint",
+    "rimuhunt",
     "google",
     "gmail",
     "gaia-id",
@@ -30,6 +31,6 @@
     "calendar",
     "esm"
   ],
-  "author": "googletype-osint contributors",
+  "author": "Lucas (rimublinda) & rimuhunt contributors",
   "license": "MIT"
 }

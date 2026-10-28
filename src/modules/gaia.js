@@ -151,3 +151,4 @@ export async function resolveGaia(target, options = {}) {
     error: 'Alvo não reconhecido como e-mail ou Gaia ID'
   };
 }
+

@@ -128,3 +128,4 @@ export class Session {
     return sapisid ? generateSapisidHash(sapisid, origin) : '';
   }
 }
+

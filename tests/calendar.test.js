@@ -27,3 +27,4 @@ test('parseICalendar extrai título, fuso horário e eventos de stream iCal', ()
   assert.equal(events[0].location, 'Google Meet');
   assert.equal(events[0].start, '20261101T140000Z');
 });
+

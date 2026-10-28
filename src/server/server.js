@@ -13,7 +13,7 @@ const HTML_LANDING = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>googletype-osint • Investigação Google em Tempo Real</title>
+  <title>rimuhunt • Investigação Google em Tempo Real</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -35,7 +35,7 @@ const HTML_LANDING = `<!DOCTYPE html>
 <body>
   <div class="container">
     <header>
-      <h1>⚡ googletype-osint</h1>
+      <h1>⚡ rimuhunt</h1>
       <p class="lead">Investigação profunda de contas Google / Gmail com streaming SSE</p>
     </header>
 
@@ -186,10 +186,11 @@ export function createServer() {
 export function startServer(port = 3000) {
   const server = createServer();
   server.listen(port, () => {
-    console.log(styleText(['bold', 'cyan'], `\n⚡ Servidor micro-API do googletype-osint iniciado na porta ${port}`));
+    console.log(styleText(['bold', 'cyan'], `\n⚡ Servidor micro-API do rimuhunt iniciado na porta ${port}`));
     console.log(styleText('white', `   • Interface Web: http://localhost:${port}`));
     console.log(styleText('white', `   • Streaming SSE: http://localhost:${port}/investigate?target=alvo@gmail.com`));
     console.log(styleText('white', `   • GeoJSON:       http://localhost:${port}/geojson?target=alvo@gmail.com\n`));
   });
   return server;
 }
+

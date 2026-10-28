@@ -1,16 +1,16 @@
 /**
- * @fileoverview Banners e elementos visuais de cabeçalho para o terminal.
+ * @fileoverview Banners e elementos visuais de cabeçalho para o terminal do rimuhunt.
  */
 
 import { styleText } from 'node:util';
 
 export const BANNER = `
-  ██████╗  ██████╗  ██████╗  ██████╗ ██╗     ███████╗████████╗██╗   ██╗██████╗ ███████╗
- ██╔════╝ ██╔═══██╗██╔═══██╗██╔════╝ ██║     ██╔════╝╚══██╔══╝╚██╗ ██╔╝██╔══██╗██╔════╝
- ██║  ███╗██║   ██║██║   ██║██║  ███╗██║     █████╗     ██║    ╚████╔╝ ██████╔╝█████╗  
- ██║   ██║██║   ██║██║   ██║██║   ██║██║     ██╔══╝     ██║     ╚██╔╝  ██╔═══╝ ██╔══╝  
- ╚██████╔╝╚██████╔╝╚██████╔╝╚██████╔╝███████╗███████╗   ██║      ██║   ██║     ███████╗
-  ╚═════╝  ╚═════╝  ╚═════╝  ╚═════╝ ╚══════╝╚══════╝   ╚═╝      ╚═╝   ╚═╝     ╚══════╝
+ ██████╗  ██╗███╗   ███╗██╗   ██╗██╗  ██╗██╗   ██╗███╗   ██╗████████╗
+ ██╔══██╗ ██║████╗ ████║██║   ██║██║  ██║██║   ██║████╗  ██║╚══██╔══╝
+ ██████╔╝ ██║██╔████╔██║██║   ██║███████║██║   ██║██╔██╗ ██║   ██║   
+ ██╔══██╗ ██║██║╚██╔╝██║██║   ██║██╔══██║██║   ██║██║╚██╗██║   ██║   
+ ██║  ██║ ██║██║ ╚═╝ ██║╚██████╔╝██║  ██║╚██████╔╝██║ ╚████║   ██║   
+ ╚═╝  ╚═╝ ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   
 `;
 
 /**
@@ -19,7 +19,7 @@ export const BANNER = `
  */
 export function renderBanner() {
   const styledBanner = styleText(['bold', 'cyan'], BANNER);
-  const subtitle = styleText(['bold', 'white'], '  ⚡ Investigação OSINT Profunda de Contas Google / Gmail em Node.js ESM');
-  const meta = styleText(['dim'], '  Versão 1.0.0 • Zero Build Step • Coordenadas GeoJSON • HD Avatars\n');
+  const subtitle = styleText(['bold', 'white'], '  ⚡ rimuhunt • Investigação OSINT Profunda de Contas Google / Gmail');
+  const meta = styleText(['dim'], '  Criado por Lucas (rimublinda) • Node.js ESM • GeoJSON • Zero Build Step\n');
   return `${styledBanner}\n${subtitle}\n${meta}`;
 }

@@ -23,3 +23,4 @@ test('isDefaultGoogleAvatar identifica avatares padrões de silhueta e letra', (
   assert.equal(isDefaultGoogleAvatar('https://lh3.googleusercontent.com/ogk/default_avatar'), true);
   assert.equal(isDefaultGoogleAvatar('https://lh3.googleusercontent.com/a/ACg8ocRealUserPhoto=s96-c'), false);
 });
+
