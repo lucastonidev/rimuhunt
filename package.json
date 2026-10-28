@@ -1,0 +1,35 @@
+{
+  "name": "googletype-osint",
+  "version": "1.0.0",
+  "description": "Investigação OSINT profunda de pegada digital de contas Google / Gmail em JavaScript nativo (Node.js ESM) com zero dependências externas.",
+  "type": "module",
+  "bin": {
+    "googletype": "./bin/googletype.js"
+  },
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node bin/googletype.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "osint",
+    "google",
+    "gmail",
+    "gaia-id",
+    "footprint",
+    "investigation",
+    "maps",
+    "geojson",
+    "youtube",
+    "calendar",
+    "esm"
+  ],
+  "author": "googletype-osint contributors",
+  "license": "MIT"
+}
